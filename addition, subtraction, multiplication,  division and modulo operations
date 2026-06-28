@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int iNum1, iNum2;
+
+    scanf("%d %d", &iNum1, &iNum2);
+
+    printf("iNum1 + iNum2 = %d\n", iNum1 + iNum2);
+    printf("iNum1 - iNum2 = %d\n", iNum1 - iNum2);
+    printf("iNum1 * iNum2 = %d\n", iNum1 * iNum2);
+
+    if(iNum2 != 0) {
+        printf("iNum1 / iNum2 = %d\n", iNum1 / iNum2);
+        printf("iNum1 %% iNum2 = %d\n", iNum1 % iNum2);
+    } else {
+        printf("Division and Modulo not possible (denominator is 0)\n");
+    }
+
+    return 0;
+}
